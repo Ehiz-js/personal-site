@@ -1,0 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+#navbar-container {
+	display: grid;
+	grid-template: 100%/1fr 1fr;
+}
