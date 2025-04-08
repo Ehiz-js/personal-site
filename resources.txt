@@ -1,0 +1,25 @@
+#color palette
+
+#1B262C black
+#0F4C75 dark blue
+#3282B8 medium blue
+#BBE1FA light blue
+
+#projects
+weather app
+https://ehiz-js.github.io/Weather-app-js/
+
+portfolio site
+https://ehiz-js.github.io/portfolio-html/
+
+cat generator
+ https://ehiz-js.github.io/cat-generator-js/
+
+ image slider
+https://ehiz-js.github.io/imageSlider-js/
+
+moving site
+https://ehiz-js.github.io/moving-site-bootstrap/
+
+js calculator
+ https://ehiz-js.github.io/Js-calculator/
