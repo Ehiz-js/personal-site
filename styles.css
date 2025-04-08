@@ -170,6 +170,7 @@ h2 {
 	border-left: 5px solid var(--dark);
 	border-radius: 10%;
 	transition: ease 0.5s;
+	padding-top: 5rem;
 }
 #bio-container > div:hover {
 	transform: scale(1.1);
@@ -196,7 +197,7 @@ h2 {
 	padding: 0 5rem;
 	text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
 	letter-spacing: 0.1rem;
-	margin-bottom: 3rem;
+	margin-bottom: 5rem;
 }
 #projects > h2 {
 	text-align: center;
@@ -305,4 +306,28 @@ form button:hover {
 	height: 20rem;
 	padding-top: 3rem;
 	margin-top: 10rem;
+}
+
+@media (max-width: 995px) {
+	#hero-container {
+		display: grid;
+		grid-template: 1fr 1fr/100%;
+	}
+	#hero-container h2 {
+		margin-bottom: 5rem;
+	}
+	#bio-container {
+		display: grid;
+		grid-template: 1fr 1fr 1fr/100%;
+	}
+	#projects > h2 {
+		padding: 0 2rem;
+	}
+	#projects > h3 {
+		padding: 2rem 2rem;
+	}
+	#projects-container {
+		display: grid;
+		grid-template: repeat(6, 1fr) / 100%;
+	}
 }
