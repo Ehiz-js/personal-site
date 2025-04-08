@@ -15,6 +15,12 @@ html {
 	scroll-behavior: smooth;
 	background-color: var(--dark);
 }
+#header {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
 #navbar-container {
 	display: grid;
 	grid-template: 100%/1fr 1fr;
@@ -101,10 +107,14 @@ a:active {
 
 #hero-img img {
 	border-radius: 50%;
-	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 	width: 32rem;
 	height: 30rem;
 	transition: 0.5s ease;
+}
+#hero-img img:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 25px var(--mediumcolor);
 }
 #hero-text {
 	display: flex;
@@ -137,7 +147,7 @@ h2 {
 }
 #bio {
 	margin-top: 10rem;
-	height: 100vh;
+	height: 100%;
 	background-image: url(./assets/backgrounds/darkbg.jpg);
 	background-repeat: no-repeat;
 	background-attachment: initial;
@@ -159,6 +169,10 @@ h2 {
 	text-align: center;
 	border-left: 5px solid var(--dark);
 	border-radius: 10%;
+	transition: ease 0.5s;
+}
+#bio-container > div:hover {
+	transform: scale(1.1);
 }
 #bio-container img {
 	border-radius: 50%;
@@ -182,6 +196,7 @@ h2 {
 	padding: 0 5rem;
 	text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
 	letter-spacing: 0.1rem;
+	margin-bottom: 3rem;
 }
 #projects > h2 {
 	text-align: center;
@@ -196,4 +211,53 @@ h2 {
 	font-family: sans-serif;
 	letter-spacing: 0.1rem;
 	font-size: 1.5rem;
+	padding-bottom: 2rem;
+}
+#projects-container {
+	display: grid;
+	grid-template: 1fr 1fr/1fr 1fr 1fr;
+	gap: 3rem;
+}
+.project-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+	border-radius: 10%;
+	transition: ease 0.5s;
+}
+.project-card:hover {
+	transform: scale(1.1);
+}
+.project-card img {
+	margin-top: 2rem;
+	border-radius: 10%;
+}
+
+.project-title {
+	font-size: 2.5rem;
+	padding: 1rem 0;
+	color: white;
+}
+.project-card button {
+	font-size: 1.5rem;
+	border-radius: 15%;
+	color: var(--lightcolor);
+	background-color: var(--darkcolor);
+	padding: 0.5rem 0.5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 2rem;
+	transition: ease 0.5s;
+}
+.project-card button:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	box-shadow: 0 0 25px var(--mediumcolor);
+}
+.social-icons {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
 }
