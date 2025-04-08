@@ -200,7 +200,7 @@ h2 {
 }
 #projects > h2 {
 	text-align: center;
-	margin-top: 5rem;
+	margin-top: 10rem;
 	font-family: sans-serif;
 	letter-spacing: 0.1rem;
 	font-size: 3rem;
@@ -256,8 +256,53 @@ h2 {
 	box-shadow: 0 0 25px var(--mediumcolor);
 }
 .social-icons {
+	font-size: 2rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 100%;
+	margin-top: 10rem;
+	margin-bottom: 6rem;
+}
+.social-icons a {
+	border-radius: 40%;
+	padding: 1rem 1rem;
+	background-color: var(--darkcolor);
+	transition: ease 0.5s;
+}
+.social-icons a:hover {
+	box-shadow: 0 0 25px var(--mediumcolor);
+	transform: scale(1.1);
+}
+#form {
 	display: flex;
 	justify-content: center;
-	width: 100%;
-	height: 100%;
+}
+form button {
+	font-size: 2rem;
+	border-radius: 15%;
+	color: var(--lightcolor);
+	background-color: var(--darkcolor);
+	padding: 1rem 1rem;
+	margin-top: 0.5rem;
+	margin-bottom: 2rem;
+	transition: ease 0.5s;
+}
+form button:hover {
+	cursor: pointer;
+	box-shadow: 0 0 25px var(--mediumcolor);
+	transform: scale(1.1);
+}
+.footer-text {
+	color: var(--lightcolor);
+	font-weight: lighter;
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 20rem;
+	padding-top: 3rem;
+	margin-top: 10rem;
 }
