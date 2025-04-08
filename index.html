@@ -5,6 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<title>Ehiz Personal Site</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="styles.css" />
 		<link rel="icon" type="image/x-icon" href="./assets/images/man.png" />
 	</head>
@@ -12,17 +18,36 @@
 		<section id="header">
 			<div id="navbar-container">
 				<div id="logo">
-					<img src="./assets/images/navbar-img.jpg" alt="" />
+					<a href="#"
+						><img
+							src="./assets/images/navbar-img.jpg"
+							alt="navbar logo"
+							id="navbar-logo"
+					/></a>
 				</div>
 				<div id="nav-btns">
-					<a href="#">Home</a>
-					<a href="#">About</a>
-					<a href="#">Contact</a>
+					<a href="#header" class="nav-btn">Home</a>
+					<a href="#" class="nav-btn">About</a>
+					<a href="#" class="nav-btn">Projects</a>
+					<a href="#" class="nav-btn">Contact</a>
 				</div>
 			</div>
 		</section>
-		<section id="hero"></section>
+		<section id="hero">
+			<div id="hero-container">
+				<div id="hero-img">
+					<img src="./assets/images/img4.jpg" alt="hero image" />
+				</div>
+				<div id="hero-text">
+					<h1><span style="color: #950101">Hello,</span> I'm Ehiz</h1>
+				</div>
+				<div id="hero-text2">
+					<h2>A programmer.</h2>
+				</div>
+			</div>
+		</section>
 		<section id="bio"></section>
+		<section id="projects"></section>
 		<section id="contact"></section>
 		<section id="footer"></section>
 	</body>

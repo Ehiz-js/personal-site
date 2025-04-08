@@ -1,7 +1,117 @@
+* {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	color: white;
+}
 html {
 	scroll-behavior: smooth;
+	background-color: black;
 }
 #navbar-container {
 	display: grid;
 	grid-template: 100%/1fr 1fr;
+	background-color: black;
+	animation: slide-down 1s ease-out 0.5s 1;
+}
+@keyframes slide-down {
+	from {
+		transform: translateY(-100%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+#logo {
+	padding-left: 3rem;
+	padding-top: 1rem;
+}
+#navbar-logo {
+	border-radius: 50%;
+	height: 3.5rem;
+	border: 3px solid #950101;
+}
+#nav-btns {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#nav-btns a {
+	display: inline-block;
+	font-family: "EB Garamond", sans-serif;
+	font-size: 1.5rem;
+	font-weight: lighter;
+	text-decoration: none;
+	color: white;
+	transition: all 0.2s ease;
+}
+#nav-btns a:hover,
+a:active {
+	transform: scale(1.1);
+	color: #950101;
+	border-bottom: 5px solid #3d0000;
+}
+.nav-btn a[href="#header"]:target {
+	transform: scale(1.1);
+	color: #950101;
+	border-bottom: 5px solid #3d0000;
+}
+#hero {
+	height: 55rem;
+	background-image: url(./assets/backgrounds/darkbg.png);
+	background-repeat: no-repeat;
+	background-attachment: initial;
+	background-size: contain;
+}
+#hero-container {
+	transition: 2s ease;
+	backdrop-filter: blur(8px);
+	height: 100%;
+	display: grid;
+	grid-template: 1fr 1fr/ 1fr 1fr;
+}
+#hero-img {
+	grid-row: span 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: slide-right 1s ease-out 0.5s 1;
+}
+@keyframes slide-right {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+#hero-img img {
+	border-radius: 50%;
+	box-shadow: 2px 2px 10px #bbe1fa;
+	width: 32rem;
+	height: 30rem;
+	transition: 0.5s ease;
+}
+#hero-text {
+	display: flex;
+	justify-content: start;
+	align-items: end;
+	font-size: 5rem;
+	animation: slide-left 1s ease-out 0.5s 1;
+}
+#hero-text2 {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	animation: slide-left 1s ease-out 0.5s 1;
+}
+@keyframes slide-left {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	}
 }
